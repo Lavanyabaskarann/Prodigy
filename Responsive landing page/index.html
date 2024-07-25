@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Adventure</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background: black;
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 15px;
+            z-index: 1000;
+            width: 100%;
+        }
+        nav a {
+            color: black; /* Changed text color to black */
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-left: 10px;
+            font-family: 'Permanent Marker', cursive;
+            transition: background 0.3s;
+            background: #36d1dc; /* Added background color */
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background: grey; /* Added contrasting hover color */
+            color: white; /* Text color change on hover */
+        }
+        .section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: black; /* Changed text color to black */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            font-family: 'Permanent Marker', cursive;
+            animation: fadeIn 2s ease-in-out;
+            color: black; /* Changed text color to black */
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 600px;
+            font-family: 'Courgette', cursive;
+            animation: fadeIn 2s ease-in-out;
+            color: white; /* Changed text color to white */
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1rem;
+            color: aqua;
+            background: white;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+            animation: bounce 2s infinite;
+        }
+        .cta-button:hover {
+            background: black;
+            color: white;
+        }
+        .destinations .cta-button {
+            color: white;
+            background: #36d1dc;
+        }
+        .destinations .cta-button:hover {
+            background: #5b86e5;
+        }
+        .services .cta-button {
+            color: white;
+            background: #ffb75e;
+        }
+        .services .cta-button:hover {
+            background: #ed8f03;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: black;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .contact-form button:hover {
+            background: red;
+        }
+        footer {
+            text-align: center;
+            color: #ffffffb3;
+            font-size: 0.9rem;
+            padding: 20px 0;
+            background: black; /* Changed background color to black */
+            width: 100%;
+            position: relative; /* Set position to relative */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section id="home" class="section" style="background-image: url('https://th.bing.com/th/id/OIP.N0EIJ88JQ30s4-DmA-quAAHaFu?w=243&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7');">
+        <h1>Adventure Awaits</h1>
+        <p>Embark on an extraordinary journey with us. Discover uncharted territories and make unforgettable memories.</p>
+        <a href="#" class="cta-button">Join the Adventure</a>
+    </section>
+    
+    <section id="about" class="section" style="background-image: url('https://th.bing.com/th/id/OIP.j36w96pL8BspchTaGu0-egHaE9?w=286&h=192&c=7&r=0&o=5&dpr=1.3&pid=1.7');">
+        <h1>About Us</h1>
+        <p>We are a team of explorers committed to discovering the wonders of the world. Our passion drives us to push the boundaries and inspire others to do the same.</p>
+    </section>
+    
+    <section id="destinations" class="section" style="background-image: url('https://th.bing.com/th/id/OIP.GEo2FCuATzcNYYpax00_tQHaEK?w=305&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7');">
+        <h1>Our Destinations</h1>
+        <p>Explore breathtaking destinations across the globe. From majestic mountains to serene beaches, we offer a variety of tours to satisfy your wanderlust.</p>
+        <a href="#" class="cta-button">Explore Destinations</a>
+    </section>
+    
+    <section id="services" class="section" style="background-image: url('https://th.bing.com/th/id/OIP.M5HEyOS1DdDon0tLhLlVpgHaDq?w=350&h=173&c=7&r=0&o=5&dpr=1.3&pid=1.7');">
+        <h1>Our Services</h1>
+        <p>We offer a range of services including guided tours, travel planning, and adventure activities to ensure you have the best experience possible.</p>
+        <a href="#" class="cta-button">View Services</a>
+    </section>
+    
+    <section id="testimonials" class="section" style="background-image: url('https://th.bing.com/th/id/OIP.YbSfNrF-GgygmzUAkCkhigHaFG?w=257&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7');">
+        <h1>Testimonials</h1>
+        <p>Don't just take our word for it. See what our satisfied customers have to say about their unforgettable adventures with us.</p>
+    </section>
+    
+    <section id="contact" class="section" style="background-image: url('https://th.bing.com/th/id/OIP.skFAafgr5obWGYFSo4y2ZAHaEY?w=301&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7');">
+        <h1>Contact Us</h1>
+        <p>Have questions or want to share your adventures? Get in touch with us. We would love to hear from you!</p>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    <footer>
+        &copy; 2024 Adventure Travels. All rights reserved. | Designed by Lavanya Baskaran
+    </footer>
+</body>
+</html>
+
